@@ -6,7 +6,9 @@
 package via.pro3.generated;
 
 @com.google.protobuf.Generated
-public interface AnimalRequestOrBuilder extends
+public interface
+
+AnimalRequestOrBuilder extends
     // @@protoc_insertion_point(interface_extends:AnimalRequest)
     com.google.protobuf.MessageOrBuilder {
 
