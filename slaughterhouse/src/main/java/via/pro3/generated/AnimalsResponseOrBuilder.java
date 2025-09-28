@@ -11,19 +11,19 @@ public interface AnimalsResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated int32 animal_reg_numbers = 1;</code>
-   * @return A list containing the animalRegNumbers.
+   * <code>repeated int32 animal_ids = 1;</code>
+   * @return A list containing the animalIds.
    */
-  java.util.List<java.lang.Integer> getAnimalRegNumbersList();
+  java.util.List<java.lang.Integer> getAnimalIdsList();
   /**
-   * <code>repeated int32 animal_reg_numbers = 1;</code>
-   * @return The count of animalRegNumbers.
+   * <code>repeated int32 animal_ids = 1;</code>
+   * @return The count of animalIds.
    */
-  int getAnimalRegNumbersCount();
+  int getAnimalIdsCount();
   /**
-   * <code>repeated int32 animal_reg_numbers = 1;</code>
+   * <code>repeated int32 animal_ids = 1;</code>
    * @param index The index of the element to return.
-   * @return The animalRegNumbers at the given index.
+   * @return The animalIds at the given index.
    */
-  int getAnimalRegNumbers(int index);
+  int getAnimalIds(int index);
 }

@@ -8,7 +8,7 @@ import via.pro3.repositories.ProductRepository;
 import java.sql.SQLException;
 import java.util.List;
 
-public class SlaughterhouseImpl extends SlaughterhouseInfoGrpc.SlaughterhouseInfoImplBase {
+public class SlaughterhouseImpl extends SlaughterhouseGrpc.SlaughterhouseImplBase {
 
     private final AnimalRepository animalRepository = new AnimalRepository();
     private final ProductRepository productRepository = new ProductRepository();
@@ -16,17 +16,17 @@ public class SlaughterhouseImpl extends SlaughterhouseInfoGrpc.SlaughterhouseInf
     @Override
     public void getAnimalsByProductId(ProductRequest request, StreamObserver<AnimalsResponse> responseObserver) {
 
-        System.out.println("Received request >>> " + request.toString());
+        System.out.println("Received request: " + request.toString());
 
-        List<Integer> animalRegNumbers;
+        List<Integer> animalIds;
         try {
-            animalRegNumbers = animalRepository.getAnimalsByProductId(request.getProductId());
+            animalIds = animalRepository.getAnimalsByProductId(request.getProductId());
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
         AnimalsResponse response = AnimalsResponse.newBuilder()
-                .addAllAnimalRegNumbers(animalRegNumbers)
+                .addAllAnimalIds(animalIds)
                 .build();
 
         responseObserver.onNext(response);

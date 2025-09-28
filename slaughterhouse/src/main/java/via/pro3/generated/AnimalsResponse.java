@@ -6,10 +6,6 @@
 package via.pro3.generated;
 
 /**
- * <pre>
- * A message to return a list of animal registration numbers.
- * </pre>
- *
  * Protobuf type {@code AnimalsResponse}
  */
 @com.google.protobuf.Generated
@@ -32,51 +28,51 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AnimalsResponse() {
-    animalRegNumbers_ = emptyIntList();
+    animalIds_ = emptyIntList();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return via.pro3.generated.Slaughterhouse.internal_static_AnimalsResponse_descriptor;
+    return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalsResponse_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return via.pro3.generated.Slaughterhouse.internal_static_AnimalsResponse_fieldAccessorTable
+    return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             via.pro3.generated.AnimalsResponse.class, via.pro3.generated.AnimalsResponse.Builder.class);
   }
 
-  public static final int ANIMAL_REG_NUMBERS_FIELD_NUMBER = 1;
+  public static final int ANIMAL_IDS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private com.google.protobuf.Internal.IntList animalRegNumbers_ =
+  private com.google.protobuf.Internal.IntList animalIds_ =
       emptyIntList();
   /**
-   * <code>repeated int32 animal_reg_numbers = 1;</code>
-   * @return A list containing the animalRegNumbers.
+   * <code>repeated int32 animal_ids = 1;</code>
+   * @return A list containing the animalIds.
    */
   @java.lang.Override
   public java.util.List<java.lang.Integer>
-      getAnimalRegNumbersList() {
-    return animalRegNumbers_;
+      getAnimalIdsList() {
+    return animalIds_;
   }
   /**
-   * <code>repeated int32 animal_reg_numbers = 1;</code>
-   * @return The count of animalRegNumbers.
+   * <code>repeated int32 animal_ids = 1;</code>
+   * @return The count of animalIds.
    */
-  public int getAnimalRegNumbersCount() {
-    return animalRegNumbers_.size();
+  public int getAnimalIdsCount() {
+    return animalIds_.size();
   }
   /**
-   * <code>repeated int32 animal_reg_numbers = 1;</code>
+   * <code>repeated int32 animal_ids = 1;</code>
    * @param index The index of the element to return.
-   * @return The animalRegNumbers at the given index.
+   * @return The animalIds at the given index.
    */
-  public int getAnimalRegNumbers(int index) {
-    return animalRegNumbers_.getInt(index);
+  public int getAnimalIds(int index) {
+    return animalIds_.getInt(index);
   }
-  private int animalRegNumbersMemoizedSerializedSize = -1;
+  private int animalIdsMemoizedSerializedSize = -1;
 
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
@@ -93,12 +89,12 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (getAnimalRegNumbersList().size() > 0) {
+    if (getAnimalIdsList().size() > 0) {
       output.writeUInt32NoTag(10);
-      output.writeUInt32NoTag(animalRegNumbersMemoizedSerializedSize);
+      output.writeUInt32NoTag(animalIdsMemoizedSerializedSize);
     }
-    for (int i = 0; i < animalRegNumbers_.size(); i++) {
-      output.writeInt32NoTag(animalRegNumbers_.getInt(i));
+    for (int i = 0; i < animalIds_.size(); i++) {
+      output.writeInt32NoTag(animalIds_.getInt(i));
     }
     getUnknownFields().writeTo(output);
   }
@@ -111,17 +107,17 @@ private static final long serialVersionUID = 0L;
     size = 0;
     {
       int dataSize = 0;
-      for (int i = 0; i < animalRegNumbers_.size(); i++) {
+      for (int i = 0; i < animalIds_.size(); i++) {
         dataSize += com.google.protobuf.CodedOutputStream
-          .computeInt32SizeNoTag(animalRegNumbers_.getInt(i));
+          .computeInt32SizeNoTag(animalIds_.getInt(i));
       }
       size += dataSize;
-      if (!getAnimalRegNumbersList().isEmpty()) {
+      if (!getAnimalIdsList().isEmpty()) {
         size += 1;
         size += com.google.protobuf.CodedOutputStream
             .computeInt32SizeNoTag(dataSize);
       }
-      animalRegNumbersMemoizedSerializedSize = dataSize;
+      animalIdsMemoizedSerializedSize = dataSize;
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -138,8 +134,8 @@ private static final long serialVersionUID = 0L;
     }
     via.pro3.generated.AnimalsResponse other = (via.pro3.generated.AnimalsResponse) obj;
 
-    if (!getAnimalRegNumbersList()
-        .equals(other.getAnimalRegNumbersList())) return false;
+    if (!getAnimalIdsList()
+        .equals(other.getAnimalIdsList())) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -151,9 +147,9 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (getAnimalRegNumbersCount() > 0) {
-      hash = (37 * hash) + ANIMAL_REG_NUMBERS_FIELD_NUMBER;
-      hash = (53 * hash) + getAnimalRegNumbersList().hashCode();
+    if (getAnimalIdsCount() > 0) {
+      hash = (37 * hash) + ANIMAL_IDS_FIELD_NUMBER;
+      hash = (53 * hash) + getAnimalIdsList().hashCode();
     }
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
@@ -253,10 +249,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * A message to return a list of animal registration numbers.
-   * </pre>
-   *
    * Protobuf type {@code AnimalsResponse}
    */
   public static final class Builder extends
@@ -265,13 +257,13 @@ private static final long serialVersionUID = 0L;
       via.pro3.generated.AnimalsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return via.pro3.generated.Slaughterhouse.internal_static_AnimalsResponse_descriptor;
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalsResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return via.pro3.generated.Slaughterhouse.internal_static_AnimalsResponse_fieldAccessorTable
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               via.pro3.generated.AnimalsResponse.class, via.pro3.generated.AnimalsResponse.Builder.class);
     }
@@ -290,14 +282,14 @@ private static final long serialVersionUID = 0L;
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
-      animalRegNumbers_ = emptyIntList();
+      animalIds_ = emptyIntList();
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return via.pro3.generated.Slaughterhouse.internal_static_AnimalsResponse_descriptor;
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalsResponse_descriptor;
     }
 
     @java.lang.Override
@@ -325,8 +317,8 @@ private static final long serialVersionUID = 0L;
     private void buildPartial0(via.pro3.generated.AnimalsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
-        animalRegNumbers_.makeImmutable();
-        result.animalRegNumbers_ = animalRegNumbers_;
+        animalIds_.makeImmutable();
+        result.animalIds_ = animalIds_;
       }
     }
 
@@ -342,14 +334,14 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(via.pro3.generated.AnimalsResponse other) {
       if (other == via.pro3.generated.AnimalsResponse.getDefaultInstance()) return this;
-      if (!other.animalRegNumbers_.isEmpty()) {
-        if (animalRegNumbers_.isEmpty()) {
-          animalRegNumbers_ = other.animalRegNumbers_;
-          animalRegNumbers_.makeImmutable();
+      if (!other.animalIds_.isEmpty()) {
+        if (animalIds_.isEmpty()) {
+          animalIds_ = other.animalIds_;
+          animalIds_.makeImmutable();
           bitField0_ |= 0x00000001;
         } else {
-          ensureAnimalRegNumbersIsMutable();
-          animalRegNumbers_.addAll(other.animalRegNumbers_);
+          ensureAnimalIdsIsMutable();
+          animalIds_.addAll(other.animalIds_);
         }
         onChanged();
       }
@@ -381,16 +373,16 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
               int v = input.readInt32();
-              ensureAnimalRegNumbersIsMutable();
-              animalRegNumbers_.addInt(v);
+              ensureAnimalIdsIsMutable();
+              animalIds_.addInt(v);
               break;
             } // case 8
             case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              ensureAnimalRegNumbersIsMutable();
+              ensureAnimalIdsIsMutable();
               while (input.getBytesUntilLimit() > 0) {
-                animalRegNumbers_.addInt(input.readInt32());
+                animalIds_.addInt(input.readInt32());
               }
               input.popLimit(limit);
               break;
@@ -412,85 +404,85 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.google.protobuf.Internal.IntList animalRegNumbers_ = emptyIntList();
-    private void ensureAnimalRegNumbersIsMutable() {
-      if (!animalRegNumbers_.isModifiable()) {
-        animalRegNumbers_ = makeMutableCopy(animalRegNumbers_);
+    private com.google.protobuf.Internal.IntList animalIds_ = emptyIntList();
+    private void ensureAnimalIdsIsMutable() {
+      if (!animalIds_.isModifiable()) {
+        animalIds_ = makeMutableCopy(animalIds_);
       }
       bitField0_ |= 0x00000001;
     }
     /**
-     * <code>repeated int32 animal_reg_numbers = 1;</code>
-     * @return A list containing the animalRegNumbers.
+     * <code>repeated int32 animal_ids = 1;</code>
+     * @return A list containing the animalIds.
      */
     public java.util.List<java.lang.Integer>
-        getAnimalRegNumbersList() {
-      animalRegNumbers_.makeImmutable();
-      return animalRegNumbers_;
+        getAnimalIdsList() {
+      animalIds_.makeImmutable();
+      return animalIds_;
     }
     /**
-     * <code>repeated int32 animal_reg_numbers = 1;</code>
-     * @return The count of animalRegNumbers.
+     * <code>repeated int32 animal_ids = 1;</code>
+     * @return The count of animalIds.
      */
-    public int getAnimalRegNumbersCount() {
-      return animalRegNumbers_.size();
+    public int getAnimalIdsCount() {
+      return animalIds_.size();
     }
     /**
-     * <code>repeated int32 animal_reg_numbers = 1;</code>
+     * <code>repeated int32 animal_ids = 1;</code>
      * @param index The index of the element to return.
-     * @return The animalRegNumbers at the given index.
+     * @return The animalIds at the given index.
      */
-    public int getAnimalRegNumbers(int index) {
-      return animalRegNumbers_.getInt(index);
+    public int getAnimalIds(int index) {
+      return animalIds_.getInt(index);
     }
     /**
-     * <code>repeated int32 animal_reg_numbers = 1;</code>
+     * <code>repeated int32 animal_ids = 1;</code>
      * @param index The index to set the value at.
-     * @param value The animalRegNumbers to set.
+     * @param value The animalIds to set.
      * @return This builder for chaining.
      */
-    public Builder setAnimalRegNumbers(
+    public Builder setAnimalIds(
         int index, int value) {
 
-      ensureAnimalRegNumbersIsMutable();
-      animalRegNumbers_.setInt(index, value);
+      ensureAnimalIdsIsMutable();
+      animalIds_.setInt(index, value);
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>repeated int32 animal_reg_numbers = 1;</code>
-     * @param value The animalRegNumbers to add.
+     * <code>repeated int32 animal_ids = 1;</code>
+     * @param value The animalIds to add.
      * @return This builder for chaining.
      */
-    public Builder addAnimalRegNumbers(int value) {
+    public Builder addAnimalIds(int value) {
 
-      ensureAnimalRegNumbersIsMutable();
-      animalRegNumbers_.addInt(value);
+      ensureAnimalIdsIsMutable();
+      animalIds_.addInt(value);
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>repeated int32 animal_reg_numbers = 1;</code>
-     * @param values The animalRegNumbers to add.
+     * <code>repeated int32 animal_ids = 1;</code>
+     * @param values The animalIds to add.
      * @return This builder for chaining.
      */
-    public Builder addAllAnimalRegNumbers(
+    public Builder addAllAnimalIds(
         java.lang.Iterable<? extends java.lang.Integer> values) {
-      ensureAnimalRegNumbersIsMutable();
+      ensureAnimalIdsIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, animalRegNumbers_);
+          values, animalIds_);
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>repeated int32 animal_reg_numbers = 1;</code>
+     * <code>repeated int32 animal_ids = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAnimalRegNumbers() {
-      animalRegNumbers_ = emptyIntList();
+    public Builder clearAnimalIds() {
+      animalIds_ = emptyIntList();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;

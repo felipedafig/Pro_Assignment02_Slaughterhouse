@@ -5,11 +5,11 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
 /**
  */
 @io.grpc.stub.annotations.GrpcGenerated
-public final class SlaughterhouseInfoGrpc {
+public final class SlaughterhouseGrpc {
 
-  private SlaughterhouseInfoGrpc() {}
+  private SlaughterhouseGrpc() {}
 
-  public static final java.lang.String SERVICE_NAME = "SlaughterhouseInfo";
+  public static final java.lang.String SERVICE_NAME = "Slaughterhouse";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<via.pro3.generated.ProductRequest,
@@ -23,10 +23,10 @@ public final class SlaughterhouseInfoGrpc {
   public static io.grpc.MethodDescriptor<via.pro3.generated.ProductRequest,
       via.pro3.generated.AnimalsResponse> getGetAnimalsByProductIdMethod() {
     io.grpc.MethodDescriptor<via.pro3.generated.ProductRequest, via.pro3.generated.AnimalsResponse> getGetAnimalsByProductIdMethod;
-    if ((getGetAnimalsByProductIdMethod = SlaughterhouseInfoGrpc.getGetAnimalsByProductIdMethod) == null) {
-      synchronized (SlaughterhouseInfoGrpc.class) {
-        if ((getGetAnimalsByProductIdMethod = SlaughterhouseInfoGrpc.getGetAnimalsByProductIdMethod) == null) {
-          SlaughterhouseInfoGrpc.getGetAnimalsByProductIdMethod = getGetAnimalsByProductIdMethod =
+    if ((getGetAnimalsByProductIdMethod = SlaughterhouseGrpc.getGetAnimalsByProductIdMethod) == null) {
+      synchronized (SlaughterhouseGrpc.class) {
+        if ((getGetAnimalsByProductIdMethod = SlaughterhouseGrpc.getGetAnimalsByProductIdMethod) == null) {
+          SlaughterhouseGrpc.getGetAnimalsByProductIdMethod = getGetAnimalsByProductIdMethod =
               io.grpc.MethodDescriptor.<via.pro3.generated.ProductRequest, via.pro3.generated.AnimalsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetAnimalsByProductId"))
@@ -35,7 +35,7 @@ public final class SlaughterhouseInfoGrpc {
                   via.pro3.generated.ProductRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   via.pro3.generated.AnimalsResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new SlaughterhouseInfoMethodDescriptorSupplier("GetAnimalsByProductId"))
+              .setSchemaDescriptor(new SlaughterhouseMethodDescriptorSupplier("GetAnimalsByProductId"))
               .build();
         }
       }
@@ -54,10 +54,10 @@ public final class SlaughterhouseInfoGrpc {
   public static io.grpc.MethodDescriptor<via.pro3.generated.AnimalRequest,
       via.pro3.generated.ProductsResponse> getGetProductsByAnimalIdMethod() {
     io.grpc.MethodDescriptor<via.pro3.generated.AnimalRequest, via.pro3.generated.ProductsResponse> getGetProductsByAnimalIdMethod;
-    if ((getGetProductsByAnimalIdMethod = SlaughterhouseInfoGrpc.getGetProductsByAnimalIdMethod) == null) {
-      synchronized (SlaughterhouseInfoGrpc.class) {
-        if ((getGetProductsByAnimalIdMethod = SlaughterhouseInfoGrpc.getGetProductsByAnimalIdMethod) == null) {
-          SlaughterhouseInfoGrpc.getGetProductsByAnimalIdMethod = getGetProductsByAnimalIdMethod =
+    if ((getGetProductsByAnimalIdMethod = SlaughterhouseGrpc.getGetProductsByAnimalIdMethod) == null) {
+      synchronized (SlaughterhouseGrpc.class) {
+        if ((getGetProductsByAnimalIdMethod = SlaughterhouseGrpc.getGetProductsByAnimalIdMethod) == null) {
+          SlaughterhouseGrpc.getGetProductsByAnimalIdMethod = getGetProductsByAnimalIdMethod =
               io.grpc.MethodDescriptor.<via.pro3.generated.AnimalRequest, via.pro3.generated.ProductsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetProductsByAnimalId"))
@@ -66,7 +66,7 @@ public final class SlaughterhouseInfoGrpc {
                   via.pro3.generated.AnimalRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   via.pro3.generated.ProductsResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new SlaughterhouseInfoMethodDescriptorSupplier("GetProductsByAnimalId"))
+              .setSchemaDescriptor(new SlaughterhouseMethodDescriptorSupplier("GetProductsByAnimalId"))
               .build();
         }
       }
@@ -77,60 +77,60 @@ public final class SlaughterhouseInfoGrpc {
   /**
    * Creates a new async stub that supports all call types for the service
    */
-  public static SlaughterhouseInfoStub newStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoStub>() {
+  public static SlaughterhouseStub newStub(io.grpc.Channel channel) {
+    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseStub>() {
         @java.lang.Override
-        public SlaughterhouseInfoStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new SlaughterhouseInfoStub(channel, callOptions);
+        public SlaughterhouseStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new SlaughterhouseStub(channel, callOptions);
         }
       };
-    return SlaughterhouseInfoStub.newStub(factory, channel);
+    return SlaughterhouseStub.newStub(factory, channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports all types of calls on the service
    */
-  public static SlaughterhouseInfoBlockingV2Stub newBlockingV2Stub(
+  public static SlaughterhouseBlockingV2Stub newBlockingV2Stub(
       io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoBlockingV2Stub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoBlockingV2Stub>() {
+    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseBlockingV2Stub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseBlockingV2Stub>() {
         @java.lang.Override
-        public SlaughterhouseInfoBlockingV2Stub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new SlaughterhouseInfoBlockingV2Stub(channel, callOptions);
+        public SlaughterhouseBlockingV2Stub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new SlaughterhouseBlockingV2Stub(channel, callOptions);
         }
       };
-    return SlaughterhouseInfoBlockingV2Stub.newStub(factory, channel);
+    return SlaughterhouseBlockingV2Stub.newStub(factory, channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
-  public static SlaughterhouseInfoBlockingStub newBlockingStub(
+  public static SlaughterhouseBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoBlockingStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoBlockingStub>() {
+    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseBlockingStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseBlockingStub>() {
         @java.lang.Override
-        public SlaughterhouseInfoBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new SlaughterhouseInfoBlockingStub(channel, callOptions);
+        public SlaughterhouseBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new SlaughterhouseBlockingStub(channel, callOptions);
         }
       };
-    return SlaughterhouseInfoBlockingStub.newStub(factory, channel);
+    return SlaughterhouseBlockingStub.newStub(factory, channel);
   }
 
   /**
    * Creates a new ListenableFuture-style stub that supports unary calls on the service
    */
-  public static SlaughterhouseInfoFutureStub newFutureStub(
+  public static SlaughterhouseFutureStub newFutureStub(
       io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoFutureStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseInfoFutureStub>() {
+    io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseFutureStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<SlaughterhouseFutureStub>() {
         @java.lang.Override
-        public SlaughterhouseInfoFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new SlaughterhouseInfoFutureStub(channel, callOptions);
+        public SlaughterhouseFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new SlaughterhouseFutureStub(channel, callOptions);
         }
       };
-    return SlaughterhouseInfoFutureStub.newStub(factory, channel);
+    return SlaughterhouseFutureStub.newStub(factory, channel);
   }
 
   /**
@@ -153,30 +153,30 @@ public final class SlaughterhouseInfoGrpc {
   }
 
   /**
-   * Base class for the server implementation of the service SlaughterhouseInfo.
+   * Base class for the server implementation of the service Slaughterhouse.
    */
-  public static abstract class SlaughterhouseInfoImplBase
+  public static abstract class SlaughterhouseImplBase
       implements io.grpc.BindableService, AsyncService {
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
-      return SlaughterhouseInfoGrpc.bindService(this);
+      return SlaughterhouseGrpc.bindService(this);
     }
   }
 
   /**
-   * A stub to allow clients to do asynchronous rpc calls to service SlaughterhouseInfo.
+   * A stub to allow clients to do asynchronous rpc calls to service Slaughterhouse.
    */
-  public static final class SlaughterhouseInfoStub
-      extends io.grpc.stub.AbstractAsyncStub<SlaughterhouseInfoStub> {
-    private SlaughterhouseInfoStub(
+  public static final class SlaughterhouseStub
+      extends io.grpc.stub.AbstractAsyncStub<SlaughterhouseStub> {
+    private SlaughterhouseStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected SlaughterhouseInfoStub build(
+    protected SlaughterhouseStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-      return new SlaughterhouseInfoStub(channel, callOptions);
+      return new SlaughterhouseStub(channel, callOptions);
     }
 
     /**
@@ -197,19 +197,19 @@ public final class SlaughterhouseInfoGrpc {
   }
 
   /**
-   * A stub to allow clients to do synchronous rpc calls to service SlaughterhouseInfo.
+   * A stub to allow clients to do synchronous rpc calls to service Slaughterhouse.
    */
-  public static final class SlaughterhouseInfoBlockingV2Stub
-      extends io.grpc.stub.AbstractBlockingStub<SlaughterhouseInfoBlockingV2Stub> {
-    private SlaughterhouseInfoBlockingV2Stub(
+  public static final class SlaughterhouseBlockingV2Stub
+      extends io.grpc.stub.AbstractBlockingStub<SlaughterhouseBlockingV2Stub> {
+    private SlaughterhouseBlockingV2Stub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected SlaughterhouseInfoBlockingV2Stub build(
+    protected SlaughterhouseBlockingV2Stub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-      return new SlaughterhouseInfoBlockingV2Stub(channel, callOptions);
+      return new SlaughterhouseBlockingV2Stub(channel, callOptions);
     }
 
     /**
@@ -228,19 +228,19 @@ public final class SlaughterhouseInfoGrpc {
   }
 
   /**
-   * A stub to allow clients to do limited synchronous rpc calls to service SlaughterhouseInfo.
+   * A stub to allow clients to do limited synchronous rpc calls to service Slaughterhouse.
    */
-  public static final class SlaughterhouseInfoBlockingStub
-      extends io.grpc.stub.AbstractBlockingStub<SlaughterhouseInfoBlockingStub> {
-    private SlaughterhouseInfoBlockingStub(
+  public static final class SlaughterhouseBlockingStub
+      extends io.grpc.stub.AbstractBlockingStub<SlaughterhouseBlockingStub> {
+    private SlaughterhouseBlockingStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected SlaughterhouseInfoBlockingStub build(
+    protected SlaughterhouseBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-      return new SlaughterhouseInfoBlockingStub(channel, callOptions);
+      return new SlaughterhouseBlockingStub(channel, callOptions);
     }
 
     /**
@@ -259,19 +259,19 @@ public final class SlaughterhouseInfoGrpc {
   }
 
   /**
-   * A stub to allow clients to do ListenableFuture-style rpc calls to service SlaughterhouseInfo.
+   * A stub to allow clients to do ListenableFuture-style rpc calls to service Slaughterhouse.
    */
-  public static final class SlaughterhouseInfoFutureStub
-      extends io.grpc.stub.AbstractFutureStub<SlaughterhouseInfoFutureStub> {
-    private SlaughterhouseInfoFutureStub(
+  public static final class SlaughterhouseFutureStub
+      extends io.grpc.stub.AbstractFutureStub<SlaughterhouseFutureStub> {
+    private SlaughterhouseFutureStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected SlaughterhouseInfoFutureStub build(
+    protected SlaughterhouseFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-      return new SlaughterhouseInfoFutureStub(channel, callOptions);
+      return new SlaughterhouseFutureStub(channel, callOptions);
     }
 
     /**
@@ -354,32 +354,32 @@ public final class SlaughterhouseInfoGrpc {
         .build();
   }
 
-  private static abstract class SlaughterhouseInfoBaseDescriptorSupplier
+  private static abstract class SlaughterhouseBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
-    SlaughterhouseInfoBaseDescriptorSupplier() {}
+    SlaughterhouseBaseDescriptorSupplier() {}
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return via.pro3.generated.Slaughterhouse.getDescriptor();
+      return via.pro3.generated.SlaughterhouseOuterClass.getDescriptor();
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
-      return getFileDescriptor().findServiceByName("SlaughterhouseInfo");
+      return getFileDescriptor().findServiceByName("Slaughterhouse");
     }
   }
 
-  private static final class SlaughterhouseInfoFileDescriptorSupplier
-      extends SlaughterhouseInfoBaseDescriptorSupplier {
-    SlaughterhouseInfoFileDescriptorSupplier() {}
+  private static final class SlaughterhouseFileDescriptorSupplier
+      extends SlaughterhouseBaseDescriptorSupplier {
+    SlaughterhouseFileDescriptorSupplier() {}
   }
 
-  private static final class SlaughterhouseInfoMethodDescriptorSupplier
-      extends SlaughterhouseInfoBaseDescriptorSupplier
+  private static final class SlaughterhouseMethodDescriptorSupplier
+      extends SlaughterhouseBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
     private final java.lang.String methodName;
 
-    SlaughterhouseInfoMethodDescriptorSupplier(java.lang.String methodName) {
+    SlaughterhouseMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
@@ -394,11 +394,11 @@ public final class SlaughterhouseInfoGrpc {
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
     io.grpc.ServiceDescriptor result = serviceDescriptor;
     if (result == null) {
-      synchronized (SlaughterhouseInfoGrpc.class) {
+      synchronized (SlaughterhouseGrpc.class) {
         result = serviceDescriptor;
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-              .setSchemaDescriptor(new SlaughterhouseInfoFileDescriptorSupplier())
+              .setSchemaDescriptor(new SlaughterhouseFileDescriptorSupplier())
               .addMethod(getGetAnimalsByProductIdMethod())
               .addMethod(getGetProductsByAnimalIdMethod())
               .build();

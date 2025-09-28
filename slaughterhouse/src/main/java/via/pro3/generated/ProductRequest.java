@@ -6,10 +6,6 @@
 package via.pro3.generated;
 
 /**
- * <pre>
- * A message to send a product ID in a request.
- * </pre>
- *
  * Protobuf type {@code ProductRequest}
  */
 @com.google.protobuf.Generated
@@ -36,13 +32,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return via.pro3.generated.Slaughterhouse.internal_static_ProductRequest_descriptor;
+    return via.pro3.generated.SlaughterhouseOuterClass.internal_static_ProductRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return via.pro3.generated.Slaughterhouse.internal_static_ProductRequest_fieldAccessorTable
+    return via.pro3.generated.SlaughterhouseOuterClass.internal_static_ProductRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             via.pro3.generated.ProductRequest.class, via.pro3.generated.ProductRequest.Builder.class);
   }
@@ -216,10 +212,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * A message to send a product ID in a request.
-   * </pre>
-   *
    * Protobuf type {@code ProductRequest}
    */
   public static final class Builder extends
@@ -228,13 +220,13 @@ private static final long serialVersionUID = 0L;
       via.pro3.generated.ProductRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return via.pro3.generated.Slaughterhouse.internal_static_ProductRequest_descriptor;
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_ProductRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return via.pro3.generated.Slaughterhouse.internal_static_ProductRequest_fieldAccessorTable
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_ProductRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               via.pro3.generated.ProductRequest.class, via.pro3.generated.ProductRequest.Builder.class);
     }
@@ -260,7 +252,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return via.pro3.generated.Slaughterhouse.internal_static_ProductRequest_descriptor;
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_ProductRequest_descriptor;
     }
 
     @java.lang.Override

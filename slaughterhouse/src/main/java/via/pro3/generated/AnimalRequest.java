@@ -6,10 +6,6 @@
 package via.pro3.generated;
 
 /**
- * <pre>
- * A message to send an animal registration number in a request.
- * </pre>
- *
  * Protobuf type {@code AnimalRequest}
  */
 @com.google.protobuf.Generated
@@ -36,26 +32,26 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return via.pro3.generated.Slaughterhouse.internal_static_AnimalRequest_descriptor;
+    return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return via.pro3.generated.Slaughterhouse.internal_static_AnimalRequest_fieldAccessorTable
+    return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             via.pro3.generated.AnimalRequest.class, via.pro3.generated.AnimalRequest.Builder.class);
   }
 
-  public static final int ANIMAL_REG_NUMBER_FIELD_NUMBER = 1;
-  private int animalRegNumber_ = 0;
+  public static final int ANIMAL_ID_FIELD_NUMBER = 1;
+  private int animalId_ = 0;
   /**
-   * <code>int32 animal_reg_number = 1;</code>
-   * @return The animalRegNumber.
+   * <code>int32 animal_id = 1;</code>
+   * @return The animalId.
    */
   @java.lang.Override
-  public int getAnimalRegNumber() {
-    return animalRegNumber_;
+  public int getAnimalId() {
+    return animalId_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -72,8 +68,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (animalRegNumber_ != 0) {
-      output.writeInt32(1, animalRegNumber_);
+    if (animalId_ != 0) {
+      output.writeInt32(1, animalId_);
     }
     getUnknownFields().writeTo(output);
   }
@@ -84,9 +80,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (animalRegNumber_ != 0) {
+    if (animalId_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, animalRegNumber_);
+        .computeInt32Size(1, animalId_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -103,8 +99,8 @@ private static final long serialVersionUID = 0L;
     }
     via.pro3.generated.AnimalRequest other = (via.pro3.generated.AnimalRequest) obj;
 
-    if (getAnimalRegNumber()
-        != other.getAnimalRegNumber()) return false;
+    if (getAnimalId()
+        != other.getAnimalId()) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -116,8 +112,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + ANIMAL_REG_NUMBER_FIELD_NUMBER;
-    hash = (53 * hash) + getAnimalRegNumber();
+    hash = (37 * hash) + ANIMAL_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getAnimalId();
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -216,10 +212,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * A message to send an animal registration number in a request.
-   * </pre>
-   *
    * Protobuf type {@code AnimalRequest}
    */
   public static final class Builder extends
@@ -228,13 +220,13 @@ private static final long serialVersionUID = 0L;
       via.pro3.generated.AnimalRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return via.pro3.generated.Slaughterhouse.internal_static_AnimalRequest_descriptor;
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return via.pro3.generated.Slaughterhouse.internal_static_AnimalRequest_fieldAccessorTable
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               via.pro3.generated.AnimalRequest.class, via.pro3.generated.AnimalRequest.Builder.class);
     }
@@ -253,14 +245,14 @@ private static final long serialVersionUID = 0L;
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
-      animalRegNumber_ = 0;
+      animalId_ = 0;
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return via.pro3.generated.Slaughterhouse.internal_static_AnimalRequest_descriptor;
+      return via.pro3.generated.SlaughterhouseOuterClass.internal_static_AnimalRequest_descriptor;
     }
 
     @java.lang.Override
@@ -288,7 +280,7 @@ private static final long serialVersionUID = 0L;
     private void buildPartial0(via.pro3.generated.AnimalRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.animalRegNumber_ = animalRegNumber_;
+        result.animalId_ = animalId_;
       }
     }
 
@@ -304,8 +296,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(via.pro3.generated.AnimalRequest other) {
       if (other == via.pro3.generated.AnimalRequest.getDefaultInstance()) return this;
-      if (other.getAnimalRegNumber() != 0) {
-        setAnimalRegNumber(other.getAnimalRegNumber());
+      if (other.getAnimalId() != 0) {
+        setAnimalId(other.getAnimalId());
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -334,7 +326,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 8: {
-              animalRegNumber_ = input.readInt32();
+              animalId_ = input.readInt32();
               bitField0_ |= 0x00000001;
               break;
             } // case 8
@@ -355,34 +347,34 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private int animalRegNumber_ ;
+    private int animalId_ ;
     /**
-     * <code>int32 animal_reg_number = 1;</code>
-     * @return The animalRegNumber.
+     * <code>int32 animal_id = 1;</code>
+     * @return The animalId.
      */
     @java.lang.Override
-    public int getAnimalRegNumber() {
-      return animalRegNumber_;
+    public int getAnimalId() {
+      return animalId_;
     }
     /**
-     * <code>int32 animal_reg_number = 1;</code>
-     * @param value The animalRegNumber to set.
+     * <code>int32 animal_id = 1;</code>
+     * @param value The animalId to set.
      * @return This builder for chaining.
      */
-    public Builder setAnimalRegNumber(int value) {
+    public Builder setAnimalId(int value) {
 
-      animalRegNumber_ = value;
+      animalId_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 animal_reg_number = 1;</code>
+     * <code>int32 animal_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAnimalRegNumber() {
+    public Builder clearAnimalId() {
       bitField0_ = (bitField0_ & ~0x00000001);
-      animalRegNumber_ = 0;
+      animalId_ = 0;
       onChanged();
       return this;
     }

@@ -11,8 +11,8 @@ public interface AnimalRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 animal_reg_number = 1;</code>
-   * @return The animalRegNumber.
+   * <code>int32 animal_id = 1;</code>
+   * @return The animalId.
    */
-  int getAnimalRegNumber();
+  int getAnimalId();
 }

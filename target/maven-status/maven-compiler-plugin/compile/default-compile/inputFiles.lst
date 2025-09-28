@@ -7,8 +7,8 @@ C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\genera
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\ProductRequestOrBuilder.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\ProductsResponse.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\ProductsResponseOrBuilder.java
-C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\Slaughterhouse.java
-C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\SlaughterhouseInfoGrpc.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\SlaughterhouseGrpc.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\SlaughterhouseOuterClass.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\Animal.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\Part.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\Product.java
@@ -16,4 +16,6 @@ C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\repositories\AnimalRepository.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\repositories\DBConnection.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\repositories\ProductRepository.java
-C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\service\slaughterhouseImpl.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\ServerMain.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\service\ClientMain.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\service\SlaughterhouseImpl.java

@@ -4,7 +4,7 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import via.pro3.generated.AnimalsResponse;
 import via.pro3.generated.ProductRequest;
-import via.pro3.generated.SlaughterhouseInfoGrpc;
+import via.pro3.generated.SlaughterhouseGrpc;
 
 public class ClientMain {
     private static final String HOST = "localhost";
@@ -17,8 +17,8 @@ public class ClientMain {
                 .usePlaintext()
                 .build();
 
-        SlaughterhouseInfoGrpc.SlaughterhouseInfoBlockingStub stub =
-                SlaughterhouseInfoGrpc.newBlockingStub(channel);
+        SlaughterhouseGrpc.SlaughterhouseBlockingStub stub =
+                SlaughterhouseGrpc.newBlockingStub(channel);
 
 
         int testProductId = 1;
@@ -33,12 +33,12 @@ public class ClientMain {
 
             System.out.println("check");
 
-            if (response.getAnimalRegNumbersCount() > 0) {
+            if (response.getAnimalIdsCount() > 0) {
                 System.out.println("Animals in Product ID " + testProductId + ":");
 
                 System.out.println("check2");
 
-                for (Integer animalId : response.getAnimalRegNumbersList()) {
+                for (Integer animalId : response.getAnimalIdsList()) {
                     System.out.println("- Animal ID: " + animalId);
                 }
             } else {

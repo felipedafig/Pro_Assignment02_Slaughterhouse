@@ -12,7 +12,6 @@ public class AnimalRepository {
 
         DBConnection db = new DBConnection();
 
-        // try-with-resources to ensure connection.close() is called
         try (Connection connection = db.openConnection();
              PreparedStatement statement = connection.prepareStatement("SELECT fk_animal_id FROM product_animal_link WHERE fk_product_id = ?")) {
 

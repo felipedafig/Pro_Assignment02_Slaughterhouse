@@ -6,8 +6,8 @@
 package via.pro3.generated;
 
 @com.google.protobuf.Generated
-public final class Slaughterhouse {
-  private Slaughterhouse() {}
+public final class SlaughterhouseOuterClass {
+  private SlaughterhouseOuterClass() {}
   static {
     com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
       com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
@@ -15,7 +15,7 @@ public final class Slaughterhouse {
       /* minor= */ 32,
       /* patch= */ 0,
       /* suffix= */ "",
-      Slaughterhouse.class.getName());
+      SlaughterhouseOuterClass.class.getName());
   }
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
@@ -56,15 +56,14 @@ public final class Slaughterhouse {
   static {
     java.lang.String[] descriptorData = {
       "\n\024slaughterhouse.proto\"$\n\016ProductRequest" +
-      "\022\022\n\nproduct_id\030\001 \001(\005\"*\n\rAnimalRequest\022\031\n" +
-      "\021animal_reg_number\030\001 \001(\005\"-\n\017AnimalsRespo" +
-      "nse\022\032\n\022animal_reg_numbers\030\001 \003(\005\"\'\n\020Produ" +
-      "ctsResponse\022\023\n\013product_ids\030\001 \003(\0052\214\001\n\022Sla" +
-      "ughterhouseInfo\022:\n\025GetAnimalsByProductId" +
-      "\022\017.ProductRequest\032\020.AnimalsResponse\022:\n\025G" +
-      "etProductsByAnimalId\022\016.AnimalRequest\032\021.P" +
-      "roductsResponseB\026\n\022via.pro3.generatedP\001b" +
-      "\006proto3"
+      "\022\022\n\nproduct_id\030\001 \001(\005\"\"\n\rAnimalRequest\022\021\n" +
+      "\tanimal_id\030\001 \001(\005\"%\n\017AnimalsResponse\022\022\n\na" +
+      "nimal_ids\030\001 \003(\005\"\'\n\020ProductsResponse\022\023\n\013p" +
+      "roduct_ids\030\001 \003(\0052\210\001\n\016Slaughterhouse\022:\n\025G" +
+      "etAnimalsByProductId\022\017.ProductRequest\032\020." +
+      "AnimalsResponse\022:\n\025GetProductsByAnimalId" +
+      "\022\016.AnimalRequest\032\021.ProductsResponseB\026\n\022v" +
+      "ia.pro3.generatedP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -81,13 +80,13 @@ public final class Slaughterhouse {
     internal_static_AnimalRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_AnimalRequest_descriptor,
-        new java.lang.String[] { "AnimalRegNumber", });
+        new java.lang.String[] { "AnimalId", });
     internal_static_AnimalsResponse_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_AnimalsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_AnimalsResponse_descriptor,
-        new java.lang.String[] { "AnimalRegNumbers", });
+        new java.lang.String[] { "AnimalIds", });
     internal_static_ProductsResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ProductsResponse_fieldAccessorTable = new
