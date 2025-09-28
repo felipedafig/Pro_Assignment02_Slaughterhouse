@@ -2,9 +2,7 @@ package via.pro3.service;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import via.pro3.generated.AnimalsResponse;
-import via.pro3.generated.ProductRequest;
-import via.pro3.generated.SlaughterhouseGrpc;
+import via.pro3.generated.*;
 
 public class ClientMain {
     private static final String HOST = "localhost";
@@ -20,23 +18,16 @@ public class ClientMain {
         SlaughterhouseGrpc.SlaughterhouseBlockingStub stub =
                 SlaughterhouseGrpc.newBlockingStub(channel);
 
-
         int testProductId = 1;
 
         ProductRequest request = ProductRequest.newBuilder()
                 .setProductId(testProductId)
                 .build();
 
-        System.out.println("check0");
-
             AnimalsResponse response = stub.getAnimalsByProductId(request);
-
-            System.out.println("check");
 
             if (response.getAnimalIdsCount() > 0) {
                 System.out.println("Animals in Product ID " + testProductId + ":");
-
-                System.out.println("check2");
 
                 for (Integer animalId : response.getAnimalIdsList()) {
                     System.out.println("- Animal ID: " + animalId);
@@ -44,6 +35,24 @@ public class ClientMain {
             } else {
                 System.out.println("No animals found in Product ID " + testProductId);
             }
+
+            //product method:
+
+            AnimalRequest request2 = AnimalRequest.newBuilder()
+                    .setAnimalId(3)
+                    .build();
+
+            ProductsResponse response2 = stub.getProductsByAnimalId(request2);
+
+        if (response2.getProductIdsCount() > 0) {
+            System.out.println("Products in Animal ID " + 3 + ":");
+
+            for (Integer productId : response2.getProductIdsList()) {
+                System.out.println("- Product ID: " + productId);
+            }
+        } else {
+            System.out.println("No products found in Animal ID " + 3);
+        }
 
             channel.shutdown();
     }

@@ -8,21 +8,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductRepository {
-    public List<String> getProductsByAnimalId(int animalId) throws SQLException {
+    public List<Integer> getProductsByAnimalId(int animalId) throws SQLException {
 
         DBConnection db = new DBConnection();
 
         try (Connection connection = db.openConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT fk_product_id FROM animal_product_link WHERE fk_animal_id = ?")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT fk_product_id FROM product_animal_link WHERE fk_animal_id = ?")) {
 
             statement.setInt(1, animalId);
 
             try (ResultSet rs = statement.executeQuery()) {
 
-                List<String> products = new ArrayList<>();
+                List<Integer> products = new ArrayList<>();
 
                 while (rs.next()) {
-                    products.add(rs.getString("product_id"));
+                    products.add(rs.getInt("fk_product_id"));
                 }
                 return products;
             }

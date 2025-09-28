@@ -12,13 +12,11 @@ public class ServerMain {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        // 1. Build the gRPC Server and attach the service implementation
         Server server = ServerBuilder
                 .forPort(PORT)
-                .addService(new SlaughterhouseImpl()) // Your service implementation
+                .addService(new SlaughterhouseImpl())
                 .build();
 
-        // 2. Start the Server
         server.start();
         System.out.println("gRPC Server started, listening on port " + PORT);
 

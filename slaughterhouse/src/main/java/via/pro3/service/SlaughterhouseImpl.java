@@ -19,11 +19,11 @@ public class SlaughterhouseImpl extends SlaughterhouseGrpc.SlaughterhouseImplBas
         System.out.println("Received request: " + request.toString());
 
         List<Integer> animalIds;
-        try {
+        try
+        {
             animalIds = animalRepository.getAnimalsByProductId(request.getProductId());
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
         }
+        catch (SQLException e) {throw new RuntimeException(e);}
 
         AnimalsResponse response = AnimalsResponse.newBuilder()
                 .addAllAnimalIds(animalIds)
@@ -37,5 +37,21 @@ public class SlaughterhouseImpl extends SlaughterhouseGrpc.SlaughterhouseImplBas
     @Override
     public void getProductsByAnimalId(AnimalRequest request, StreamObserver<ProductsResponse> responseObserver) {
 
+        System.out.println("Received request: " + request.toString());
+
+        List<Integer> productIds;
+        try
+        {
+            productIds = productRepository.getProductsByAnimalId(request.getAnimalId());
+        }
+        catch (SQLException e) {throw new RuntimeException(e);}
+
+        ProductsResponse response = ProductsResponse.newBuilder()
+                .addAllProductIds(productIds)
+                .build();
+
+        responseObserver.onNext(response);
+
+        responseObserver.onCompleted();
     }
 }
