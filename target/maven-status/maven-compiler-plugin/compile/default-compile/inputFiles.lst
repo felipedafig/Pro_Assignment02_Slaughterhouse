@@ -9,3 +9,11 @@ C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\genera
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\ProductsResponseOrBuilder.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\Slaughterhouse.java
 C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\generated\SlaughterhouseInfoGrpc.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\Animal.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\Part.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\Product.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\model\Tray.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\repositories\AnimalRepository.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\repositories\DBConnection.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\repositories\ProductRepository.java
+C:\Git_VIACode\SEM3\pro_assignment2\slaughterhouse\src\main\java\via\pro3\service\slaughterhouseImpl.java

@@ -4,12 +4,10 @@ public class Animal {
 
     private int animalId;
     private double weight;
-    private String species;
 
-    public  Animal(int animalId, double weight, String species) {
+    public  Animal(int animalId, double weight) {
 
         this.animalId = animalId;
         this.weight = weight;
-        this.species = species;
     }
 }
