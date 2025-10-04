@@ -1,7 +1,6 @@
 via\pro3\generated\AnimalsResponse$1.class
 via\pro3\generated\SlaughterhouseGrpc$SlaughterhouseStub.class
 via\pro3\repositories\DBConnection.class
-via\pro3\App.class
 via\pro3\generated\AnimalsResponse$Builder.class
 via\pro3\generated\AnimalRequest.class
 via\pro3\generated\SlaughterhouseGrpc$SlaughterhouseBlockingV2Stub.class
